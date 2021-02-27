@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/ChatPersonModel.dart';
 import 'chatScreen.dart';
+import 'appSettings.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -73,21 +74,11 @@ class HomePage extends StatelessWidget {
               children: [
                 SizedBox(height: 20,),
                 ListTile(
-                      leading: Icon(Icons.contacts, size: 30,),
-                      title: Text('Contacts', style: TextStyle(
-                        fontSize: 20,
-                      ),),
-                    ),
-
-                ListTile(
+                  onTap: () {
+          Navigator.of(context).pushNamed(AppSettings.routeName);
+    },
                   leading: Icon(Icons.settings,size: 30,),
                   title : Text('App Settings',style: TextStyle(
-                    fontSize: 20
-                  ),),
-                ),
-                ListTile(
-                  leading: Icon(Icons.call,size: 30,),
-                  title : Text('Call Logs',style: TextStyle(
                     fontSize: 20
                   ),),
                 ),

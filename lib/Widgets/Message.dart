@@ -8,7 +8,7 @@ class MessageSent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   Container(
+    return Container(
       margin: EdgeInsets.only(left: 100,bottom: 20),
       height: 40,
       width: 220,
